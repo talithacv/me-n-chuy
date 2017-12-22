@@ -1,0 +1,52 @@
+var NewComponent = React.createClass({
+  render: function() {
+    return (
+      <script>
+      <div>
+        <style dangerouslySetInnerHTML={{__html: "\n* {\n    box-sizing: border-box;\n}\n\nbody {\n    margin: 0;\n    font-family: Arial;\n}\n\n.header {\n    text-align: center;\n    padding: 32px;\n}\n\n/* Create two equal columns that floats next to each other */\n.column {\n    float: left;\n    width: 50%;\n    padding: 10px;\n}\n\n.column img {\n    margin-top: 12px;\n}\n\n/* Clear floats after the columns */\n.row:after {\n    content: \"\";\n    display: table;\n    clear: both;\n}\n" }} />
+        {/* Header */}
+        <div className="header">
+          <h1>Image Grid</h1>
+        </div>
+        {/* Photo Grid */}
+        <div className="row"> 
+          <div className="column">
+            // <img src="/w3images/wedding.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/rocks.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/falls2.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/paris.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/nature.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/mist.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/paris.jpg" style={{width: '100%'}} />
+          </div>
+          <div className="column">
+            // <img src="/w3images/underwater.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/ocean.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/wedding.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/mountainskies.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/rocks.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/underwater.jpg" style={{width: '100%'}} />
+          </div>  
+          <div className="column">
+            // <img src="/w3images/wedding.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/rocks.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/falls2.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/paris.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/nature.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/mist.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/paris.jpg" style={{width: '100%'}} />
+          </div>
+          <div className="column">
+            // <img src="/w3images/underwater.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/ocean.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/wedding.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/mountainskies.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/rocks.jpg" style={{width: '100%'}} />
+            // <img src="/w3images/underwater.jpg" style={{width: '100%'}} />
+          </div>
+        </div>
+      </div>
+      </script>
+    );
+  }
+});
