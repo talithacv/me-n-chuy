@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import ModalLogin from "./Modal";
-import ModalSignup from "./Modal1";
+import RegisterLoginModal from "./RegisterLoginModal";
 //import { connect } from "react-redux";
 // import MyModal from "./Modal";
 
@@ -78,8 +77,7 @@ class Header extends Component {
                   <a className="navbar-brand"> Welcome </a>
                 </div>
               </div>
-              <ModalLogin />
-              <ModalSignup />
+              <RegisterLoginModal />
             </nav>
           </navbar>
         </header>

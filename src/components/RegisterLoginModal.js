@@ -13,7 +13,7 @@ import firebase from "firebase";
 // import SignupSettings from"./components/User/Settings/SignupSettings";
 // import LoginSettings from "./components/User/Settings/LoginSettings";
 
-class ModalSignUp extends React.Component {
+class RegisterLoginModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,6 +48,18 @@ class ModalSignUp extends React.Component {
       });
   };
 
+  LogIn = () => {
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(this.state.Email, this.state.Password)
+      .then(payload => {
+        console.log(`look at the unique user heheheh ${payload.uid}`);
+      })
+      .catch(err => {
+        console.log(`oh no an errr hmmm ${err}`);
+      });
+  };
+
   ChangeEmail(e) {
     this.setState({ Email: e.target.value });
   }
@@ -60,7 +72,7 @@ class ModalSignUp extends React.Component {
     return (
       <div>
         <button onClick={this.openModal} style={{ height: 50, width: 200 }}>
-          SignUp
+          Register/Log-in
         </button>
         <Modal isOpen={this.state.isOpen} onRequestHide={this.hideModal}>
           <ModalHeader>
@@ -74,6 +86,9 @@ class ModalSignUp extends React.Component {
             <button type="button" class="btn btn-dark" onClick={this.SignUp}>
               SignUp
             </button>
+            <button type="button" class="btn btn-dark" onClick={this.LogIn}>
+              Login
+            </button>
           </ModalBody>
           <ModalFooter />
         </Modal>
@@ -81,4 +96,4 @@ class ModalSignUp extends React.Component {
     );
   }
 }
-export default ModalSignUp;
+export default RegisterLoginModal;

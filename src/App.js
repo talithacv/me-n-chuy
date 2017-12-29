@@ -12,6 +12,16 @@ import FAQ from "./screens/FAQ";
 
 import firebase from "firebase";
 
+var config = {
+  apiKey: "AIzaSyCGP-55EALodVNxm-SaLAbryKsz8s-a65c",
+  authDomain: "rmuse-live.firebaseapp.com",
+  databaseURL: "https://rmuse-live.firebaseio.com",
+  projectId: "rmuse-live",
+  storageBucket: "rmuse-live.appspot.com",
+  messagingSenderId: "459238602979"
+};
+firebase.initializeApp(config);
+
 class App extends Component {
   render() {
     return (
