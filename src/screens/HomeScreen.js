@@ -20,7 +20,7 @@ class Home extends Component {
             href=""
             className="typewrite"
             data-period="2000"
-            data-type="[ &quot;Im an Artist.&quot;, &quot;I am Creative.&quot;, &quot;I Love Design.&quot;, &quot;I Love to Develop.&quot;]"
+            data-type="[ &quot;Hi, Im an Artist.&quot;, &quot;I am Creative.&quot;, &quot;I Love Design.&quot;, &quot;I Love to Develop.&quot;]"
           >
             <span className="wrap" />
           </a>
